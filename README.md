@@ -1,13 +1,14 @@
 <p align="center">
-  <a href="#" target="_blank">
-    <img src="public/images/logo.png" width="200" alt="Logo Sistem">
-  </a>
+    <a href="#" target="_blank">
+        <img src="https://raw.githubusercontent.com/khairul-tamimi/Pemantauan-Perkembangan-Anak-Pustu/main/public/screenshot.png"
+            width="800" alt="Screenshot Sistem">
+    </a>
 </p>
 
 <h1 align="center">Pemantauan Perkembangan Anak - PUSTU</h1>
 
 <p align="center">
-  Aplikasi untuk memantau perkembangan anak di Puskesmas Pembantu (PUSTU).
+    Aplikasi untuk memantau perkembangan anak di Puskesmas Pembantu (PUSTU).
 </p>
 
 ---
@@ -25,5 +26,5 @@ Sistem ini dibangun dengan **Laravel 10** sebagai backend dan mendukung fitur:
 
 ## 🚀 Instalasi
 1. Clone repository:
-   ```bash
-   git clone https://github.com/khairul-tamimi/Pemantauan-Perkembangan-Anak-Pustu.git
+```bash
+git clone https://github.com/khairul-tamimi/Pemantauan-Perkembangan-Anak-Pustu.git
