@@ -1,6 +1,6 @@
 <p align="center">
     <a href="#" target="_blank">
-        <img src="https://raw.githubusercontent.com/khairul-tamimi/Pemantauan-Perkembangan-Anak-Pustu/main/public/screenshot.png"
+        <img src="https://raw.githubusercontent.com/khairul-tamimi/Pemantauan-Perkembangan-Anak-Pustu/main/public/pustu.jpg"
             width="800" alt="Screenshot Sistem">
     </a>
 </p>
