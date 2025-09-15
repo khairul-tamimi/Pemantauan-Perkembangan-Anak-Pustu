@@ -20,7 +20,7 @@ Sistem ini dibangun dengan **Laravel 10** sebagai backend dan mendukung fitur:
 - 💉 Riwayat imunisasi & kesehatan
 - 📑 Laporan perkembangan per periode
 - 👨‍⚕️ Akses khusus untuk tenaga medis
-- 🔐 Manajemen pengguna (Admin, Dokter, Bidan)
+- 🔐 Manajemen pengguna (Admin, Orang tua, Petugas)
 
 ---
 
