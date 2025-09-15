@@ -1,0 +1,35 @@
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->string('foto')->nullable();
+            $table->enum('role', ['admin', 'petugas', 'orang_tua'])->default('orang_tua');
+            $table->rememberToken(); // tambahan biar kompatibel auth
+            $table->timestamps();
+        });
+
+                Schema::create('orang_tua', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->string('nama'); // bisa nama lengkap orang tua
+            $table->string('nik')->nullable();
+            $table->string('alamat');
+            $table->string('no_hp')->nullable();
+            $table->string('pekerjaan')->nullable();
+            $table->timestamps();
+        });
+
+                Schema::create('anak', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('orang_tua_id')->nullable()->constrained('orang_tua')->onDelete('set null');
+            $table->string('nama');
+            $table->date('tanggal_lahir');
+            $table->enum('jenis_kelamin', ['L', 'P']);
+            // tambahan opsional data lahir
+            $table->float('bb_lahir')->nullable(); // berat badan lahir (kg)
+            $table->float('tb_lahir')->nullable(); // panjang lahir (cm)
+
+            $table->timestamps();
+        });
